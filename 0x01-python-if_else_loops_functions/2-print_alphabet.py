@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for i in range(26):
-    print(f"{chr(97 + i):s}", end="")
+    print("{:s}".format(chr(97 + i)), end="")
