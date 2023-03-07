@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+def remove_char_at(str, n):
+    strs = ""
+    for i, v in enumerate(str):
+        if i == n:
+            continue
+        strs += v
+    return (strs)
