@@ -8,7 +8,7 @@ def main():
     else:
         result = 0
 
-        for i ,strs in enumerate(sys.argv):
+        for i, strs in enumerate(sys.argv):
             if i == 0:
                 continue
 
