@@ -55,6 +55,11 @@ __import__("0-add")
 guillaume@ubuntu:~/0x02$ python3 0-import_add.py 
 guillaume@ubuntu:~/0x02$ 
 ```
+#### Resources
+* [python documentation](https://docs.python.org/3/tutorial/modules.html)
+* [if __name__ == "__main__":](https://www.youtube.com/watch?v=pzNISmtmzcY)
+* [if __name__ == "__main__":](https://www.youtube.com/watch?v=sugvnHA7ElY)
+
 ### 1. My first toolbox!
 Write a program that imports functions from the file `calculator_1.py`, does some Maths, and prints the result.
 * Do not use the function `print` (with string format to display integers) more than 4 times
@@ -128,6 +133,9 @@ guillaume@ubuntu:~/0x02$ ./1-calculation.py
 10 / 5 = 2
 guillaume@ubuntu:~/0x02$
 ```
+#### Resources
+* [python documentation](https://docs.python.org/3/tutorial/modules.html)
+* [if __name__ == "__main__":](https://www.youtube.com/watch?v=pzNISmtmzcY)
 ### 2. How to make a script dynamic!
 Write a program that prints the number of and the list of its arguments.
 * The output should be:
@@ -155,6 +163,8 @@ guillaume@ubuntu:~/0x02$ ./2-args.py Hello Welcome To The Best School
 6: School
 guillaume@ubuntu:~/0x02$ 
 ```
+#### Resources
+* [How to Use sys.argv in Python](https://www.knowledgehut.com/blog/programming/sys-argv-python-examples)
 ### 3. Infinite addition
 Write a program that prints the result of the addition of all arguments
 * The output should be the result of the addition of all arguments, followed by a new line
@@ -172,10 +182,12 @@ guillaume@ubuntu:~/0x02$
 Last but not least, your program should also handle big numbers. And the good news is: if your program works for the above example, it will work for the following example:
 ```
 guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 1111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999990000000000000000000 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334567788888899999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+
 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334568900000011111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999989999999999999999999
 guillaume@ubuntu:~/0x02$
 ```
-
+#### Resources
+* [How to Use sys.argv in Python](https://www.knowledgehut.com/blog/programming/sys-argv-python-examples)
 ### 4. Who are you?
 Write a program that prints all the names defined by the compiled module [hidden_4.pyc](https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc) (please download it locally).
 * You should print one name per line, in alpha order
@@ -190,6 +202,8 @@ print_hidden
 print_school
 guillaume@ubuntu:~/0x02$
 ```
+#### Resources
+* [How to Install Python 3.8 on Ubuntu](https://linuxize.com/post/how-to-install-python-3-8-on-ubuntu-18-04/)
 ### 5. Everything can be imported
 Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
 * You are not allowed to use `*` for importing or `__import__`
@@ -205,6 +219,9 @@ guillaume@ubuntu:~/0x02$ ./5-variable_load.py
 98
 guillaume@ubuntu:~/0x02$
 ```
+#### Resources
+* [python documentation](https://docs.python.org/3/tutorial/modules.html)
+
 ### 6. Build my own calculator!
 Write a program that imports all functions from the file `calculator_1.py` and handles basic operations.
 * Usage: `./100-my_calculator.py a operator b`
@@ -288,6 +305,8 @@ Unknown operator. Available operators: +, -, * and /
 1
 guillaume@ubuntu:~/0x02$
 ```
+#### Resources
+* [How To Compare Strings in Python](https://www.digitalocean.com/community/tutorials/python-string-comparison)
 ### 7. Easy print
 Write a program that prints `#pythoniscool`, followed by a new line, in the standard output.
 * Your program should be maximum 2 lines long
