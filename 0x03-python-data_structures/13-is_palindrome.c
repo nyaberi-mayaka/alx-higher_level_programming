@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
  * is_palindrome - checks if a singly linked list is a palindrome.
@@ -11,9 +10,10 @@
 
 int is_palindrome(listint_t **head)
 {
-	listint_t *slow, *fast, *prev, *curr, *nxt, *p2, *p1;
+	listint_t *slow, *fast, *prev, *curr, *nxt, *p2, *p1, *temp;
+	int flag = 0;
 
-	if (!head || !(*head)->next)
+	if (head == NULL || (*head)->next == NULL)
 	{
 		return (1);
 	}
@@ -21,8 +21,8 @@ int is_palindrome(listint_t **head)
 	slow = fast = *head;
 	while (fast != NULL && fast->next != NULL)
 	{
-		slow = slow->next;
-		fast = fast->next->next;
+		temp = slow;
+		slow = slow->next, fast = fast->next->next;
 	}
 
 /*Reverse the second half of the list*/
@@ -36,16 +36,16 @@ int is_palindrome(listint_t **head)
 	}
 
 /*check if the two halves of the list match*/
-	p1 = *head;
-	p2 = prev;
-	while (p2 != NULL)
+	p1 = *head, p2 = prev;
+	while (p2 && p1)
 	{
 		if (p1->n != p2->n)
-			return (0);
-
-		p1 = p1->next;
-		p2 = p2->next;
+		{
+			flag = 1;
+			break;
+		}
+		p1 = p1->next,	p2 = p2->next;
 	}
-
-	return (1);
+	temp->next = prev;
+	return (flag == 0 ? 1 : 0);
 }
