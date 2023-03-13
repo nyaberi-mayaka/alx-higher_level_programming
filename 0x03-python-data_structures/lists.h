@@ -18,6 +18,21 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+/**
+ * struct node - stack
+ * @data: singly linked list node.
+ * @next: points to the next element of stack
+ *
+ * Description: stack used to store singly linked list elements
+ * for project
+ */
+
+typedef struct node
+{
+	 listint_t *data;
+	 struct node *next;
+} list_t;
+
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
