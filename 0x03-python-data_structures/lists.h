@@ -2,12 +2,7 @@
 #define LISTS_H
 
 #include <stdlib.h>
-
-typedef struct queue
-{
-	int data;
-	struct queue *next, *prev;
-} q_t;
+#include <stdio.h>
 
 /**
  * struct listint_s - singly linked list
@@ -22,11 +17,6 @@ typedef struct listint_s
     int n;
     struct listint_s *next;
 } listint_t;
-
-void enqueue(q_t **, q_t **, int);
-int dequeue_front(q_t **);
-int dequeue_rear(q_t **);
-void frees(q_t *);
 
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
