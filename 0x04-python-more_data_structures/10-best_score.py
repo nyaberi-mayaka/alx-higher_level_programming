@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
     if a_dictionary:
-        x = list(a_dictionary.values())[0]
-        y = ""
-        for i, v in a_dictionary.items():
-            if v >= x:
-                x = v
-                y = i
-    return (y)
+        my_list = list(a_dictionary.keys())
+        score = 0
+        leader = ""
+        for i in my_list:
+            if a_dictionary[i] > score:
+                score = a_dictionary[i]
+                leader = i
+        return (leader)
