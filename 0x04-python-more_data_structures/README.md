@@ -156,7 +156,8 @@ guillaume@ubuntu:~/0x04$ ./5-main.py
 Number of keys: 3
 guillaume@ubuntu:~/0x04$ 
 ```
-
+#### Resources
+* [Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 ### 6. Print sorted dictionary
 Write a function that prints a dictionary by ordered keys.
 * Prototype: `def print_sorted_dictionary(a_dictionary):`
