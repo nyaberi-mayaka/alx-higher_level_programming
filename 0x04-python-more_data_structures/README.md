@@ -119,6 +119,8 @@ guillaume@ubuntu:~/0x04$ ./3-main.py
 ['C']
 guillaume@ubuntu:~/0x04$ 
 ```
+#### Resources
+* [Set Types — set, frozenset](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
 ### 4. Only differents
 Write a function that returns a set of all elements present in only one set.
 * Prototype: `def only_diff_elements(set_1, set_2):`
