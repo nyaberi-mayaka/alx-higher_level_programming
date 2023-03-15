@@ -457,7 +457,15 @@ guillaume@ubuntu:~/0x04$ ./101-main.py
 [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 guillaume@ubuntu:~/0x04$ 
 ```
-
+#### Logic
+* `return (list(map(lambda i : list(map(lambda x : x ** 2, i)), matrix)))`
+	* The `map` function takes two arguments: a `function` and an `iterable`. It applies the `function` to each element of the `iterable`, and returns a `new iterable` containing the results.
+	* The `outer map` function is applied to matrix, which is presumably a `list of lists`, where each `inner list` represents a row of values.
+	* The `lambda` function `lambda i : list(map(lambda x : x ** 2, i))` is applied to each element `i` of matrix. This lambda function takes an inner list `i`, and applies another `map` function to it.
+	* The `inner map` function takes a `lambda` function `lambda x : x ** 2` and applies it to each element `x` of the `inner list i`. This lambda function squares each element.
+	* The `inner map` function returns a new iterable containing the squared values.
+	* The `outer list` function is applied to the result of the `inner map` function, which converts the iterable of squared values into a `list`.
+	* The `outer map` function returns a new iterable containing the `lists` of squared values for each row of `matrix`.
 ### 15. Delete by value
 Write a function that deletes keys with a specific value in a dictionary.
 * Prototype: `def complex_delete(a_dictionary, value):`
@@ -500,7 +508,7 @@ ids: [1, 2, 3]
 track: Low
 guillaume@ubuntu:~/0x04$ 
 ```
-   
+
 ### 16. CPython #1: PyBytesObject
 Create two C functions that print some basic info about Python lists and Python bytes objects.
 Python lists:
