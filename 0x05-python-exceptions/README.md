@@ -294,6 +294,8 @@ guillaume@ubuntu:~/0x05$
 #### Notes
 * [How do I print an exception in Python?](https://stackoverflow.com/questions/1483429/how-do-i-print-an-exception-in-python#:~:text=If%20you%20are%20going%20to,formatted%2C%20or%20the%20full%20traceback.)
 	- [Under the answer](https://stackoverflow.com/a/1483447)
+* [How do I print to stderr in Python?](https://stackoverflow.com/questions/5574702/how-do-i-print-to-stderr-in-python)
+
 ### 8. Safe function
 Write a function that executes a function safely.
 * Prototype: `def safe_function(fct, *args):`
