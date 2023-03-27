@@ -12,6 +12,3 @@ def magic_calculation(a, b):
             result = b + a
             continue
     return (result)
-
-from dis import dis
-dis(magic_calculation)
