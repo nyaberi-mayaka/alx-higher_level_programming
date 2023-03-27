@@ -246,7 +246,8 @@ guillaume@ubuntu:~/0x05$ ./6-main.py
 C is fun
 guillaume@ubuntu:~/0x05$
 ```
-
+#### Notes
+* [Raising an Exception](https://realpython.com/lessons/raising-an-exception/)
 ### 7. Safe integer print with error message
 Write a function that prints an integer.
 * Prototype: `def safe_print_integer_err(value):`
