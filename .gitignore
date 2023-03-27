@@ -3,6 +3,6 @@
 *backup
 *swap
 .#*
-#*
+*#*
 *__pycache__*
 *main.c
