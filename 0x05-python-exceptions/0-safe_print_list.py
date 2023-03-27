@@ -7,10 +7,11 @@ def safe_print_list(my_list=[], x=0):
             if j < x:
                 print("{}".format(i), end="")
                 j += 1
-            else:
-                raise IndexExceeds
 
-    except IndexExceeds:
+                """            else:
+                raise IndexExceeds
+                """
+    except Exception as e:
         print()
     else:
         print()
@@ -18,5 +19,7 @@ def safe_print_list(my_list=[], x=0):
     return (j)
 
 
+""""
 class IndexExceeds(Exception):
     pass
+"""
