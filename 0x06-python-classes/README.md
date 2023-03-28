@@ -244,6 +244,8 @@ Area: 9 for size: 3
 size must be an integer
 guillaume@ubuntu:~/0x06$ 
 ```
+#### Notes
+* [What's the pythonic way to use getters and setters?](https://stackoverflow.com/questions/2627002/whats-the-pythonic-way-to-use-getters-and-setters)
 ### 5. Printing a square
 mandatory
 Write a class Square that defines a square by: (based on 4-square.py)
