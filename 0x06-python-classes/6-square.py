@@ -34,7 +34,9 @@ class Square:
     def position(self, value):
         """position setter"""
 
-        if isinstance(value, tuple) or len(value) == 2:
+        if isinstance(value, tuple) or len(value) == 2 or \
+           not isinstance(value[0], int) or not isinstance(value[1], int)\
+           or value[0] < 0 or value[1] < 0:
             self.__position = value
 
         else:
