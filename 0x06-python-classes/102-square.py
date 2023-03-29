@@ -1,58 +1,61 @@
 #!/usr/bin/python3
-"""Defines a class Square."""
+
+
+"""
+ A class Square that defines a square
+"""
 
 
 class Square:
-    """Represents a Square object."""
+    """
+    class square reperesenting a square object
+    """
 
     def __init__(self, size=0):
-        """Initializes a Square object.
-        Args:
-            size (int): size of the new square object.
-        """
+        """Class constructor"""
         self.size = size
 
-    @property
+    def area(self):
+        """Calculates and returns the area of a square"""
+        return (self.size ** 2)
+
+    @property                # first decorate the getter method
     def size(self):
-        """Returns the size of the current object."""
+        """@size getter"""
         return (self.__size)
 
-    @size.setter
+    @size.setter             # the property decorates with `.setter`
     def size(self, value):
-        """Sets the value of the current object>
-        Args:
-            value (int): Size to set to the object to.
-        """
-        if type(value) is not int and type(value) is not float:
-            raise TypeError("size must be an number")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
+        """Value size setter"""
+        if isinstance(value, int):
+            if value < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = value
+        else:
+            raise TypeError("size must be an integer")
 
-    def area(self):
-        """Returns the area of the current object."""
-        return (self.__size * self.__size)
-
-    def __eq__(self, other):
-        """Defines the == comparison bewteen Square objects."""
-        return self.area() == other.area()
-
+    """ rich comparison operators """
     def __lt__(self, other):
         """Defines the < comparison between Square objects."""
         return self.area() < other.area()
+
+    def __le__(self, other):
+        """Defines the > comparison between Square objects."""
+        return self.area() <= other.area()
+
+    def __eq__(self, other):
+        """Defines the > comparison between Square objects."""
+        return self.area() == other.area()
+
+    def __ne__(self, other):
+        """Defines the > comparison between Square objects."""
+        return self.area() != other.area()
 
     def __gt__(self, other):
         """Defines the > comparison between Square objects."""
         return self.area() > other.area()
 
-    def __le__(self, other):
-        """Defines the <= comparison between Square objects."""
-        return self.area() <= other.area()
-
     def __ge__(self, other):
-        """Defines the >= comparison between Square objects."""
+        """Defines the > comparison between Square objects."""
         return self.area() >= other.area()
-
-    def __ne__(self, other):
-        """Defines the != comparison between Square objects."""
-        return self.area() != other.area()
