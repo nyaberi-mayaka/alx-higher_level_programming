@@ -4,6 +4,7 @@ class Node:
     """
     Node class for a singly linked list
     """
+
     def __init__(self, data, next_node=None):
         """
         initialization called when instance of class created
@@ -52,6 +53,7 @@ class SinglyLinkedList:
     contains nodes for a singly linked list and methods for ->
     insertion
     """
+
     def __init__(self):
         """
         initialization called when instance of class created
@@ -61,7 +63,7 @@ class SinglyLinkedList:
     def sorted_insert(self, value):
         """
         inserts a new Node into the correct sorted position
-                                            (based on data)
+        (based on data)
         """
         if self.__head is None:
             self.__head = Node(value)
