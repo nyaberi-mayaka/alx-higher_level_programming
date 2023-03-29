@@ -407,6 +407,12 @@ guillaume@ubuntu:~/0x06$ ./100-main.py
 12
 guillaume@ubuntu:~/0x06$ 
 ```
+
+#### Notes 
+* [Linked Lists in Python – Explained with Examples](https://www.freecodecamp.org/news/introduction-to-linked-lists-in-python/)
+* [LinkedPython: An Introduction](https://realpython.com/linked-lists-python/#understanding-linked-lists)
+* [How To Use the `__str__()` and `__repr__()` Methods in Python](https://www.digitalocean.com/community/tutorials/python-str-repr-functions)
+* [What is the purpose of `__str__` and `__repr__`?](https://stackoverflow.com/questions/3691101/what-is-the-purpose-of-str-and-repr)
 ### 8. Print Square instance
 Write a class `Square` that defines a square by: (based on `6-square.py`)
 * Private instance attribute: size:
