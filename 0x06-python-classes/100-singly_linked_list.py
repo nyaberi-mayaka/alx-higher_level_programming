@@ -53,6 +53,9 @@ class SinglyLinkedList:
     insertion
     """
     def __init__(self):
+        """
+        initialization called when instance of class created
+        """
         self.__head = None
 
     def sorted_insert(self, value):
