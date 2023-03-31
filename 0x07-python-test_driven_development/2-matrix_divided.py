@@ -29,7 +29,8 @@ the same size")
         for j in range(len(matrix[i])):
             temp = matrix[i][j]
             if type(temp) is not int and type(temp) is not float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) \
+of integers/floats")
             new_matrix[i][j] = round((temp / div), 2)
 
     return (new_matrix)
