@@ -2,6 +2,7 @@
 
 def add_integer(a, b=98):
     """Takes two arguments and adds them.
+    Check for logical and type errors
     Args:
         a (int): The first parameter.
         b (int): The second parameter

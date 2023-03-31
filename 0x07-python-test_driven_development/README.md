@@ -123,6 +123,8 @@ guillaume@ubuntu:~/0x07$
 ```
 
 Note: you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
+#### Notes
+* [Check If a List Contains Only Numbers in Python](https://datascienceparichay.com/article/python-check-list-contains-only-numbers/)
 ### 2. Say my name
 Write a function that prints `My name is <first name> <last name>`
 * Prototype: `def say_my_name(first_name, last_name=""):`
