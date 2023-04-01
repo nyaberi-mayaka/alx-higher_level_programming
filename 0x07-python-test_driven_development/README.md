@@ -7,7 +7,7 @@
 ### Concepts
 *For this project, we expect you to look at this concept:*
 
-* [Never forget a test]()
+* [Never forget a test](https://intranet.alxswe.com/concepts/47)
 
 ***
 ## Background Context
@@ -20,11 +20,11 @@ Starting from today:
 ***
 ## Resources
 **Read or watch**:
-* [doctest — Test interactive Python examples]() *(until “26.2.3.7. Warnings” included)*
-* [doctest – Testing through documentation]()
-* [Unit Tests in Python]()
-* [Unittest module]()
-* [Interactive and Non-interactive tests]()
+* [doctest — Test interactive Python examples](https://docs.python.org/3/library/doctest.html) *(until “26.2.3.7. Warnings” included)*
+* [doctest – Testing through documentation](https://docs.python.org/3/library/doctest.html)
+* [Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8)
+* [Unittest module](https://www.youtube.com/watch?v=6tNS--WetLI)
+* [Interactive and Non-interactive tests](https://mattermost.com/blog/testing-python-understanding-doctest-and-unittest/)
 ***
 ## Learning Objectives
 ### General
@@ -433,5 +433,5 @@ julien@ubuntu:~/0x07. Pyhton Strings$
 ```
 ***
 ## Author
-* **[The_Quadzilla]()**
+* **[The_Quadzilla](https://github.com/nyaberi-mayaka)**
 ***
