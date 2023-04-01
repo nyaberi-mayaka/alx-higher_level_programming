@@ -260,6 +260,9 @@ Utinam quidem dicerent alium alio beatiorem! Iam ruinas videresguillaume@ubuntu:
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/5-text_indentation.txt
 guillaume@ubuntu:~/0x07$ 
 ```
+
+#### Notes
+* [Working Around Whitespace](https://pymotw.com/3/doctest/#working-around-whitespace)
 ### 5. Max integer - Unittest
 Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
