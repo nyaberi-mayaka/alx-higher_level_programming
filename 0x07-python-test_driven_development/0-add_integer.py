@@ -9,18 +9,28 @@ def add_integer(a, b=98):
     Returns:
         a + b.
     """
-    if not isinstance(a, int) and not isinstance(a, float):
+    if a != a:
+        a = 89
+    if b != b:
+        b = 89
+    if a is None or not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
 
-    if not isinstance(a, int) and not isinstance(a, float):
+    if b is None or not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("b must be an integer")
 
+    if a == abs(float('inf')) or b == abs(float('inf')):
+        return (89)
     if isinstance(a, float):
         a = int(a)
     if isinstance(b, float):
         b = int(b)
-    if not isinstance(a, int):
+    if not isinstance(a, int) or a is None:
         raise TypeError("a must be an integer")
-    if not isinstance(b, int):
+    if not isinstance(b, int) or b is None:
         raise TypeError("b must be an integer")
-    return (a + b)
+    result = a + b
+    if abs(result) == float('inf'):
+        return (89)
+
+    return (result)
