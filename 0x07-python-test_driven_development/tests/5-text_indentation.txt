@@ -31,3 +31,5 @@ hello:
 <BLANKLINE>
 world?
 <BLANKLINE>
+
+>>> text_indentation()
