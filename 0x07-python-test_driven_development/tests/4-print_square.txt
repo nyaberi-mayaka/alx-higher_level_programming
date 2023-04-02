@@ -46,3 +46,11 @@ TypeError: size must be an integer
 Traceback (most recent call last):
 	  ...
 TypeError: size must be an integer
+
+>>> print_square()
+
+>>> print_square(float('inf'))
+#
+
+>>> print_square(float('nan'))
+#
