@@ -90,7 +90,10 @@ guillaume@ubuntu:~/0x07$ python3 -c 'print(__import__("0-add_integer").add_integ
 3
 guillaume@ubuntu:~/0x07$ 
 ```
-
+#### Notes
+* [How can I check for NaN values?](https://stackoverflow.com/questions/944700/how-can-i-check-for-nan-values)
+	* Used to check for Not a Number. Response was found under [The usual way to test for a NaN is to see if it's equal to itself:](https://stackoverflow.com/a/944712)
+* [How to detect overflow while arithmetic in python?](https://stackoverflow.com/a/33593754) under the response https://stackoverflow.com/a/33593754
 ### 1. Divide a matrix
 Write a function that divides all elements of a matrix.
 * Prototype: `def matrix_divided(matrix, div):`
