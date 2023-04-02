@@ -49,6 +49,8 @@ TypeError: size must be an integer
 
 >>> print_square()
 
+>>> print_square("")
+
 >>> print_square(float('inf'))
 #
 
