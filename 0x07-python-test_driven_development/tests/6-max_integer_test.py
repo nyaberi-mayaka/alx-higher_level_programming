@@ -61,6 +61,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_one_element(self):
         """Run unittest for a list with one element only"""
         self.assertEqual(max_integer([20]), 20)
+
     def test_empty(self):
         """Run uittest for an empty list"""
         self.assertEqual(max_integer(), None)
