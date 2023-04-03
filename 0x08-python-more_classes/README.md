@@ -457,7 +457,10 @@ Bye rectangle...
 guillaume@ubuntu:~/0x08$ 
 ```
 **No test cases needed**
-
+#### Notessssssssssssssssss
+* [How to Concatenate Strings Using Python](https://www.knowledgehut.com/blog/programming/concatenate-strings-python)
+* [How to concatenate (join) items in a list to a single string](https://stackoverflow.com/questions/12453580/how-to-concatenate-join-items-in-a-list-to-a-single-string)
+	- [Under the answer](https://stackoverflow.com/a/62773829)
 ### 8. Compare rectangles
 Write a class `Rectangle` that defines a rectangle by: (based on `7-rectangle.py`)
 * Private instance attribute: `width`:

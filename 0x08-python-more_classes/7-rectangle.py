@@ -71,8 +71,7 @@ class Rectangle:
         string = ""
         if self.width == 0 or self.height == 0:
             return (string)
-        if type(self.print_symbol) is int:
-            self.print_symbol = str(self.print_symbol)
+
         for i in range(self.height):
             for j in range(self.width):
                 string += f'{self.print_symbol}'
