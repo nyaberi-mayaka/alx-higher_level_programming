@@ -367,7 +367,9 @@ Bye rectangle...
 guillaume@ubuntu:~/0x08$ 
 ```
 **No test cases needed**
-
+#### Notes
+* [Counting instances of a class?](https://stackoverflow.com/questions/8628123/counting-instances-of-a-class)
+	- [Under the answer](https://stackoverflow.com/a/51560788)
 ### 7. Change representation
 Write a class `Rectangle` that defines a rectangle by: (based on `6-rectangle.py`)
 * Private instance attribute: `width`:
