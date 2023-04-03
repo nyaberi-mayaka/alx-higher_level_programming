@@ -65,7 +65,7 @@ class Rectangle:
            same width and height as the object.
         """
         string = ""
-        if self.width != 0 or self.height != 0:
+        if self.width == 0 or self.height == 0:
             return string
         for i in range(self.height):
             string += '#' * self.width
