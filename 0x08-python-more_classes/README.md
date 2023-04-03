@@ -269,6 +269,10 @@ True
 guillaume@ubuntu:~/0x08$ 
 ```
 **No test cases needed**
+#### Notes
+* [When Should You Use .__repr__() vs .__str__() in Python?](https://realpython.com/python-repr-vs-str/)
+	* [Under the topic](https://realpython.com/python-repr-vs-str/#should-you-define-__repr__-and-__str__-in-a-custom-class)
+* [Python eval(): Evaluate Expressions Dynamically](https://realpython.com/python-eval-function/#:~:text=Python's%20eval()%20allows%20you,or%20a%20compiled%20code%20object.)
 
 ### 5. Detect instance deletion
 Write a class `Rectangle` that defines a rectangle by: (based on `4-rectangle.py`)
