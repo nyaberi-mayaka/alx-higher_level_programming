@@ -317,7 +317,8 @@ Bye rectangle...
 guillaume@ubuntu:~/0x08$ 
 ```
 **No test cases needed**
-
+#### Notes
+* [Destructor in a Python class](https://pythonprogramminglanguage.com/destructor/)
 ### 6. How many instances
 Write a class `Rectangle` that defines a rectangle by: (based on `5-rectangle.py`)
 * Private instance attribute: `width`:
