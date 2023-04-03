@@ -352,6 +352,9 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/100-matrix_mul.txt | tail
 Test passed.
 guillaume@ubuntu:~/0x07$ 
 ```
+#### Notes
+* [How do I check if a list is empty?](https://stackoverflow.com/questions/53513/how-do-i-check-if-a-list-is-empty/53752#53752)
+* [How to multiply matrices](https://www.youtube.com/watch?v=1TrgKl8DRk8)
 ### 7. Lazy matrix multiplication
 Write a function that multiplies 2 matrices by using the module [NumPy](httsp://numpy.org/)
 
