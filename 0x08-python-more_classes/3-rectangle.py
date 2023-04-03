@@ -65,10 +65,9 @@ class Rectangle:
            same width and height as the object.
         """
         string = ""
-        if self.width == 0 or self.height == 0:
-            return string
-        for i in range(self.height):
-            string += '#' * self.width
-            if i < self.height - 1:
-                string += '\n'
+        if self.width != 0 or self.height != 0:
+            for i in range(self.height):
+                string += '#' * self.width
+                if i < self.height - 1:
+                    string += '\n'
         return (string)
