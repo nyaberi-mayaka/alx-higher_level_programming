@@ -523,7 +523,8 @@ Bye rectangle...
 guillaume@ubuntu:~/0x08$
 ```
 **No test cases needed**
-
+* [Check if class object](https://stackoverflow.com/questions/18499614/check-if-class-object)
+* [Static methods in Python?](htps://stackoverflotw.com/questions/735975/static-methods-in-python)
 ### 9. A square is a rectangle
 Write a class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
 * Private instance attribute: `width`:
