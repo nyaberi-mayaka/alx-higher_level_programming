@@ -313,6 +313,12 @@ a = (1, 2)
 b = (1, 2)
 a is b
 ```
+#### Notes
+The script creates two tuples `a` and `b`, each containing the elements 1 and 2. The expression `a` is `b` checks if the two variables refer to the same object in memory. In this case, the two tuples are not the same object in memory, even though they contain the same values. Therefore, the expression a is b evaluates to `False`
+
+For strings and integers, small values are often cached and reused by Python. Therefore, if you create two variables that have the same value, they might end up pointing to the same object in memory. However, this is an implementation detail and is not guaranteed by the Python language specification. Therefore, it is still safer to compare strings and integers using the `==` operator rather than `is`.
+
+In CPython, small integers (between -5 and 256) and strings that contain only ASCII letters, digits, and underscores are cached for performance reasons. Since these objects are immutable, it is safe to cache them because they cannot be modified. Tuples are immutable objects, meaning they cannot be changed after creation. As a result, when you create two tuples with the same values, they are still distinct objects in memory, even if their contents are identical. So, a and b are two separate tuples in memory, and the is operator checks whether they are the same object, not whether their contents are equal.
 ### 26. Empty is not empty 
 What does this script print?
 ```
