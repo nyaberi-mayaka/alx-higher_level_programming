@@ -300,6 +300,12 @@ a = (1)
 b = (1)
 a is b
 ```
+#### Notes
+True
+
+The script creates two variables `a` and `b`, both assigned to the integer value `1`. Since the integers in Python are immutable, any two variables that have the same integer value will actually point to the same object in memory.
+
+Therefore, when we use the `is` keyword to check whether `a` and `b` are the same object, it returns `True`.
 ### 25. Tuple or not 
 What does this script print?
 ```
