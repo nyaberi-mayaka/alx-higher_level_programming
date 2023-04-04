@@ -457,7 +457,7 @@ Bye rectangle...
 guillaume@ubuntu:~/0x08$ 
 ```
 **No test cases needed**
-#### Notessssssssssssssssss
+#### Notes
 * [How to Concatenate Strings Using Python](https://www.knowledgehut.com/blog/programming/concatenate-strings-python)
 * [How to concatenate (join) items in a list to a single string](https://stackoverflow.com/questions/12453580/how-to-concatenate-join-items-in-a-list-to-a-single-string)
 	- [Under the answer](https://stackoverflow.com/a/62773829)
@@ -525,6 +525,7 @@ guillaume@ubuntu:~/0x08$
 **No test cases needed**
 * [Check if class object](https://stackoverflow.com/questions/18499614/check-if-class-object)
 * [Static methods in Python?](htps://stackoverflotw.com/questions/735975/static-methods-in-python)
+* * [Python's Instance, Class, and Static Methods Demystified](https://realpython.com/instance-class-and-static-methods-demystified/)
 ### 9. A square is a rectangle
 Write a class `Rectangle` that defines a rectangle by: (based on `8-rectangle.py`)
 * Private instance attribute: `width`:
@@ -579,7 +580,9 @@ Bye rectangle...
 guillaume@ubuntu:~/0x08$
 ```
 **No test cases needed**
-
+#### Notes
+* [Python's Instance, Class, and Static Methods Demystified](https://realpython.com/instance-class-and-static-methods-demystified/)
+* [Use class methods to generate objects generically in python](https://medium.com/quick-code/support-your-class-users-by-providing-an-alternate-way-of-creating-class-instances-using-class-e2da42241913)
 ### 10. N queens
 The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
 * Usage: `nqueens N`
