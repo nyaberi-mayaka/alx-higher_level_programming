@@ -421,7 +421,12 @@ julien@ubuntu:/python3$
 Assuming we are using a CPython implementation of Python3 with default options/configuration:
 * How many int objects are created by the execution of the first line of the script? (`103-line1.txt`)
 * How many int objects are created by the execution of the second line of the script (`103-line2.txt`)
+#### Notes
+When Python starts up, small integer values (e.g. 0-256) are preallocated in memory and reused throughout the program. The variables `a` and `b` in the script are assigned the preallocated integer object with a value of 1, rather than creating a new object. Therefore, no new `int` objects are created by the execution of either line of the script.
 
+This is an optimization feature called "interning" that is specific to the CPython implementation.
+
+* [Integer Interning in Python (Optimization)](https://www.codesansar.com/python-programming/integer-interning.htm#:~:text=In%20Python%20optimization%2C%20integer%20interning,range%20from%20%2D5%20to%20256.)
 ### 32. int 2/3
 ```
 julien@ubuntu:/python3$ cat int.py 
