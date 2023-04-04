@@ -326,6 +326,11 @@ a = ()
 b = ()
 a is b
 ```
+#### Notes
+This script will print `True`.
+
+In the script, two empty tuples `a` and `b` are created. When comparing `a` and `b` using the `is` operator, Python checks if a and b refer to the same object in memory. Since both tuples are empty and immutable, Python optimizes the memory usage and points both `a` and `b` to the same empty tuple object in memory. Therefore, `a is b` returns `True`.
+
 ### 27. Still the same? 
 ```
 >>> id(a)
