@@ -413,5 +413,5 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 * How many string objects are created by the execution of the last line of the script (`106-line5.txt`)
 ***
 ## Author
-* **[The_quadzilla]()**
+* **[The_quadzilla](https://github.com/nyaberi-mayaka)**
 ***
