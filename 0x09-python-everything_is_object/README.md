@@ -172,6 +172,11 @@ l2 = l1
 l1 = l1 + [4]
 print(l2)
 ```
+#### Notes
+The code creates two variables `l1` and `l2` that reference the same list object `[1, 2, 3]`. The line `l1 = l1 + [4]` creates a new list object `[1, 2, 3, 4]` and assigns it to `l1`, effectively breaking the reference to the original list object.
+
+However, `l2` still points to the original list object `[1, 2, 3]`, so when we print `l2` after modifying `l1`, we get the output `[1, 2, 3]`.
+
 ### 16. Integer incrementation
 What does this script print?
 ```
@@ -203,6 +208,12 @@ l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
 ```
+#### Notes
+The code above defines a function assign_value that takes two arguments, `n` and `v`, and assigns the value of `v` to `n`. Then, it creates two lists `l1` and `l2`.
+
+Next, the `assign_value` function is called with `l1` and `l2` as arguments. However, in Python, lists are mutable objects and passed by reference, so the assignment `n = v` within the function `assign_value` creates a new reference for the `n` variable, but does not affect the original list `l1`.
+
+Therefore, the print statement will output the original list `l1`, which is `[1, 2, 3]`.
 ### 19. Copy a list object 
 Write a function `def copy_list(l):` that returns a copy of a list.
 * The input list can contain any type of objects
@@ -236,6 +247,20 @@ guillaume@ubuntu:~/0x09$
 ```
 **No test cases needed**
 
+#### Notes
+```
+#!/usr/bin/python3
+def copy_list(l):
+    return l[:]
+```
+This is a linting error indicating that the variable name l is ambiguous. It is recommended to use a more descriptive variable name to avoid confusion and improve code readability.
+
+In the context of the code, l is used to represent a list that needs to be copied. A better variable name for this function could be original_list. The updated code would be:
+```
+#!/usr/bin/python3
+def copy_list(original_list):
+    return original_list[:]
+```
 ### 20. Tuple or not? 
 ```
 a = ()
@@ -253,7 +278,15 @@ Is `a` a tuple? Answer with `Yes` or `No`.
 a = (1)
 ```
 Is `a` a tuple? Answer with `Yes` or `No`.
+#### Notes
+No.
 
+It is not a tuple. It is just an integer.
+
+In order to create a tuple with only one element, you should use a comma after the first element. For example:
+```
+a = (1,)
+```
 ### 23. Tuple or not? 
 ```
 a = (1, )
