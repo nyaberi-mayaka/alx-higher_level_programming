@@ -383,7 +383,11 @@ guillaume@ubuntu:~/0x09$ wc -l 100-magic_string.py
 guillaume@ubuntu:~/0x09$
 ```
 **No test cases needed**
-
+#### Notes
+* [Python getattr() Method](https://www.tutorialsteacher.com/python/getattr-method)
+```
+getattr(std, 'name') returns the value of the name property of the std object, which is John. It always returns the latest value even after updating a property value.
+```
 ### 30. Low memory cost
 Write a class `LockedClass` with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called `first_name`.
 * You are not allowed to import any module
