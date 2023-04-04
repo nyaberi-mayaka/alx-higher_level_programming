@@ -455,7 +455,11 @@ julien@ubuntu:/tmp/so$
 Assuming we are using a CPython implementation of Python3 with default options/configuration:
 * Before the execution of line 2 (`print("Love")`), how many int objects have been created and are still in memory? (`105-line1.txt`)
 * Why? (optional blog post :))
-Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
+Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS
+#### Notes
+Standard implementation of Python (CPython) pre-loads (caches) a global list of integers in the range from -5 to 256. Any time an integer is referenced in this range Python does not create new one but uses the cached version. This is known as integer interning.
+
+This is basically an optimization techniques in Python. Since small integers are relatively used more in our code than large integers. So Python decides to pre-cache certain range (-5 to 256) of integers for performance reason.
 
 ### 34. Clear strings
 ```
