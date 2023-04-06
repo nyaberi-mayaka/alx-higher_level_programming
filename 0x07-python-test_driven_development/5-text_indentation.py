@@ -17,10 +17,16 @@ def text_indentation(text):
 
     lines = ".?:"
 
-    for i in range(len(text)):
-        if text[i] == " " and text[i - 1] in lines:
-            print("{}".format(""), end="")
-        else:
-            print("{}".format(text[i]), end="")
-        if text[i] in lines:
-            print("{}".format("\n"))
+    i = 0
+    while i < len(text) and text[i] == " ":
+        i += 1
+    while i < len(text):
+        print("{}".format(text[i]), end="")
+        if text[i] == "\n" or text[i] in lines:
+            if text[i] in lines:
+                print("{}".format("\n"))
+            i += 1
+            while i < len(text) and text[i] == " ":
+                i += 1
+            continue
+        i += 1
