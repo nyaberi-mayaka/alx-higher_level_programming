@@ -4,7 +4,7 @@ these characters: ., ? and :
 """
 
 
-def text_indentation(text=""):
+def text_indentation(text):
     """Prints a text with 2 new lines after each of these characters
     `.`, `?`, `:`
     Raises a TypeError if text is no a string
