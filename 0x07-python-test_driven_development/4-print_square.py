@@ -2,7 +2,7 @@
 """module that prints a square with the character #."""
 
 
-def print_square(size=0):
+def print_square(size):
     """Prints a square with the character #
     Checks for logical and Type errors and raises the corresponding
     Exceptions
@@ -16,9 +16,6 @@ def print_square(size=0):
 
     if size < 0:
         raise ValueError("size must be >= 0")
-
-    if size != size or size == float('inf'):
-        size = 1
 
     for i in range(size):
         print(size * "#")
