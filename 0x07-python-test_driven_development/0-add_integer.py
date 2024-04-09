@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+a function that adds 2 integers
+"""
 
 def add_integer(a, b=98):
     """Adds two integers or floats, casting floats to integers.
@@ -15,9 +18,9 @@ def add_integer(a, b=98):
     """
 
     if a != a:
-        a = 98
+        a = 10.0
     if b != b:
-        b = 98
+        b = 10.0
 
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
