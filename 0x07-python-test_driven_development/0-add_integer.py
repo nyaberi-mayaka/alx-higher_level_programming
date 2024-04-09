@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 """
 a function that adds 2 integers
 """
+
 
 def add_integer(a, b=98):
     """Adds two integers or floats, casting floats to integers.
