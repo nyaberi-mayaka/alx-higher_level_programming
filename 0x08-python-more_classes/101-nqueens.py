@@ -19,8 +19,8 @@ def solve_n_queens(n):
         """
         for i in range(col):
             if board[i] == row or \
-                board[i] - i == row - col or \
-                board[i] + i == row + col:
+               board[i] - i == row - col or \
+               board[i] + i == row + col:
                 return False
         return True
 
