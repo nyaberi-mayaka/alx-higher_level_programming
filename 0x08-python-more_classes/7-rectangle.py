@@ -7,6 +7,9 @@
 class Rectangle:
     """Class Rectangle that represents a rectangle object
     """
+    number_of_instances = 0
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle object with the given width and
            height.
@@ -16,6 +19,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -67,8 +71,10 @@ class Rectangle:
         string = ""
         if self.width == 0 or self.height == 0:
             return (string)
+
         for i in range(self.height):
-            string += '#' * self.width
+            for j in range(self.width):
+                string += f'{self.print_symbol}'
             if i < self.height - 1:
                 string += '\n'
         return (string)
@@ -89,3 +95,4 @@ class Rectangle:
         Prints a message to indicate that the object is being deleted.
         """
         print("Bye rectangle...")
+        type(self).number_of_instances -= 1

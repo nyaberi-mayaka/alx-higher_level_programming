@@ -7,6 +7,9 @@
 class Rectangle:
     """Class Rectangle that represents a rectangle object
     """
+    number_of_instances = 0
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle object with the given width and
            height.
@@ -16,6 +19,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -67,8 +71,10 @@ class Rectangle:
         string = ""
         if self.width == 0 or self.height == 0:
             return (string)
+
         for i in range(self.height):
-            string += '#' * self.width
+            for j in range(self.width):
+                string += f'{self.print_symbol}'
             if i < self.height - 1:
                 string += '\n'
         return (string)
@@ -89,3 +95,39 @@ class Rectangle:
         Prints a message to indicate that the object is being deleted.
         """
         print("Bye rectangle...")
+        type(self).number_of_instances -= 1
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Compares two rectangles and returns the one with the greater
+           area.
+        Args:
+            rect_1 (Rectangle): The first rectangle to compare.
+            rect_2 (Rectangle): The second rectangle to compare.
+        Raises:
+            TypeError: If either rect_1 or rect_2 is not an instance of
+            Rectangle.
+        Returns:
+            The rectangle with the greater area.
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+
+        if rect_1.area() >= rect_2.area():
+            return (rect_1)
+        return (rect_2)
+
+    @classmethod
+    def square(cls, size=0):
+        """Creates a new square Rectangle object with equal width
+        and height.
+        Args:
+            size (int): The size of the square (default 0).
+        Returns:
+            A new Rectangle object with equal width and height.
+        """
+
+        return (cls(size, size))
