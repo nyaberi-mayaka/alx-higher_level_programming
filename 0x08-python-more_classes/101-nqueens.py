@@ -13,12 +13,14 @@ def solve_n_queens(n):
     Returns:
     None
     """
-    def can_place(b, rw, cl):
+    def can_place(board, row, col):
         """
         Check if a queen can be placed on pos (ocuppied_rows, attempt_col).
         """
-        for i in range(cl):
-            if b[i] == rw or b[i] - i == rw - cl or b[i] + i == rw + cl:
+        for i in range(col):
+            if board[i] == row or \
+                board[i] - i == row - col or \
+                board[i] + i == row + col:
                 return False
         return True
 
