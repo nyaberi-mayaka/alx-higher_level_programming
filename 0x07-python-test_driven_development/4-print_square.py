@@ -26,6 +26,6 @@ def print_square(size):
         raise TypeError("size must be an integer")
 
     for row in range(size):
-            for col in range(size):
-                print("#", end="")
+        for col in range(size):
+            print("#", end="")
             print("")

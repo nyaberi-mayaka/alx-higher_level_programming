@@ -13,7 +13,8 @@ def matrix_divided(matrix=[[1]], div=1):
       div: A number (integer or float) used for division.
 
     Returns:
-      A new 3D matrix with all elements divided by div, rounded to 2 decimal places.
+      A new 3D matrix with all elements divided by div, rounded to 2
+    decimal places.
 
     Raises:
       TypeError:

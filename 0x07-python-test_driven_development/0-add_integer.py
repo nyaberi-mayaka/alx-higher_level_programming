@@ -20,9 +20,9 @@ def add_integer(a, b=98):
     """
 
     if a != a:
-        a = 10.0
+        a = 98
     if b != b:
-        b = 10.0
+        b = 98
 
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")

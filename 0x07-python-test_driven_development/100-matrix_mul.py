@@ -6,7 +6,8 @@ a function that multiplies 2 matrices
 
 
 def matrix_mul(m_a, m_b):
-    """Multiplies two matrices (m_a and m_b) and returns the resulting product matrix.
+    """Multiplies two matrices (m_a and m_b) and returns the resulting
+    product matrix.
 
     Args:
       m_a: A list of lists representing the first matrix (m_a).
@@ -25,7 +26,7 @@ def matrix_mul(m_a, m_b):
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
 
-    if not isinstance (m_b, list):
+    if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
 
     if not all([isinstance(item, list) for item in m_a]):
@@ -40,7 +41,7 @@ def matrix_mul(m_a, m_b):
     if len(m_b) == 0 or any(len(row) == 0 for row in m_b):
         raise ValueError("m_b can't be empty")
 
-    if any(not isinstance(element, (float, int)) for row in m_a \
+    if any(not isinstance(element, (float, int)) for row in m_a
            for element in row):
         raise TypeError("m_a should contain only integers or floats")
 
@@ -51,7 +52,6 @@ def matrix_mul(m_a, m_b):
 
     if not all(len(row) == len(m_a[0]) for row in m_a):
         raise TypeError("each row of m_a must be of the same size")
-
 
     if not all(len(row) == len(m_b[0]) for row in m_b):
         raise TypeError("each row of m_b must be of the same size")

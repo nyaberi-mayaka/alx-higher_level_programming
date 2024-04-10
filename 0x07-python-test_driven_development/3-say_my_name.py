@@ -22,7 +22,8 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
 
     """
-    full_name = f"{first_name.strip()} {' '.join([ln.strip() for ln in last_name.split()])}"
+    full_name = f"{first_name.strip()} {' '.join([ln.strip()
+    for ln in last_name.split()])}"
 
     if not full_name:
         raise TypeError("first_name must be a string")
