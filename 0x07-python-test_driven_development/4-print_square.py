@@ -28,4 +28,4 @@ def print_square(size):
     for row in range(size):
         for col in range(size):
             print("#", end="")
-            print("")
+        print("")

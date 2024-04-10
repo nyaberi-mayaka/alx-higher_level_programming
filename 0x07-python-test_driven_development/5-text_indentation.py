@@ -14,7 +14,6 @@ def text_indentation(text):
 
     Raises:
      TypeError: If text is not a string.
-    """
 
     if type(text) is not str:
         raise TypeError("text must be a string")
@@ -46,4 +45,3 @@ def text_indentation(text):
                 i += 1
             continue
         i += 1
-    """
