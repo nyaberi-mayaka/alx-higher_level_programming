@@ -14,7 +14,9 @@ def solve_n_queens(n):
     None
     """
     def can_place(board, row, col):
-    """Check if a queen can be placed on pos (ocuppied_rows, attempt_col)."""
+        """
+        Check if a queen can be placed on pos (ocuppied_rows, attempt_col).
+        """
         for i in range(col):
             if board[i] == row or \
                 board[i] - i == row - col or \
